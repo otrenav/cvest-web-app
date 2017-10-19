@@ -1,0 +1,52 @@
+
+mat-toolbar, mat-card {
+    background: #212C3F;
+}
+
+mat-toolbar.menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.space {
+    flex: 1 1 auto;
+}
+
+nav > a, nav > a:visited, nav > a:link, nav > a:hover, nav > a:active {
+    text-decoration: none;
+    font-size: 0.85em;
+    margin-left: 1.5em;
+    color: #9AAAC5;
+}
+
+span.logo, nav > a.active {
+    color: #55FFFB;
+}
+
+span.logo {
+    font-weight: bold;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 70%;
+    }
+}

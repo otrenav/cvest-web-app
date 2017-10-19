@@ -1,0 +1,91 @@
+
+<div class="assets-container">
+    <mat-table #table [dataSource]="dataSource" matSort>
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                Name
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                <b>{{ row.name }}</b>
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="symbol">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                Symbol
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                {{ row.symbol }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="location">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                Location
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                {{ row.location }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="total">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                Total
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                {{ row.total | number: '1.2-2' }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="btc">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                BTC
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                {{ row.btc | number: '1.2-4' }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="usd">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                USD
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row">
+                {{ row.usd | number: '1.2-2' }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="btc_1h">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                1H %
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row"
+                      [style.color]="customColor(row.btc_1h)">
+                {{ row.btc_1h | number: '1.2-2' }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="btc_1d">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                1D %
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row"
+                      [style.color]="customColor(row.btc_1d)">
+                {{ row.btc_1d | number: '1.2-2' }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="btc_1w">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                1W %
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row"
+                      [style.color]="customColor(row.btc_1w)">
+                {{ row.btc_1w | number: '1.2-2' }}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="btc_1m">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>
+                1M %
+            </mat-header-cell>
+            <mat-cell *matCellDef="let row"
+                      [style.color]="customColor(row.btc_1m)">
+                {{ row.btc_1m | number: '1.2-2' }}
+            </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+</div>

@@ -1,0 +1,82 @@
+
+<mat-grid-list cols="2" rowHeight="6:1">
+    <mat-grid-tile class="symbol">
+        <div class="pull-left">
+            BTC
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="symbol">
+        <div class="pull-left">
+            USD
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="value">
+        <div class="pull-left">
+            {{ overview.btc | number:'1.2-4' }}
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="value">
+        <div class="pull-left">
+            {{ overview.usd | number:'1.2-2' }}
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<hr>
+
+<mat-grid-list cols="6" rowHeight="3:1">
+    <mat-grid-tile class="time">
+        %
+    </mat-grid-tile>
+    <mat-grid-tile class="time">
+        1H
+    </mat-grid-tile>
+    <mat-grid-tile class="time">
+        1D
+    </mat-grid-tile>
+    <mat-grid-tile class="time">
+        1W
+    </mat-grid-tile>
+    <mat-grid-tile class="time">
+        1M
+    </mat-grid-tile>
+    <mat-grid-tile class="time">
+        1Y
+    </mat-grid-tile>
+    <mat-grid-tile class="time">
+        BTC
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.btc_1h)">
+        {{ overview.btc_1h | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.btc_1d)">
+        {{ overview.btc_1d | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.btc_1w)">
+        {{ overview.btc_1w | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.btc_1m)">
+        {{ overview.btc_1m | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.btc_1y)">
+        {{ overview.btc_1y | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="time">
+        USD
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.usd_1h)">
+        {{ overview.usd_1h | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.usd_1d)">
+        {{ overview.usd_1d | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.usd_1w)">
+        {{ overview.usd_1w | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.usd_1m)">
+        {{ overview.usd_1m | number:'1.2-2' }}
+    </mat-grid-tile>
+    <mat-grid-tile class="percentage" [style.color]="customColor(overview.usd_1y)">
+        {{ overview.usd_1y | number:'1.2-2' }}
+    </mat-grid-tile>
+</mat-grid-list>

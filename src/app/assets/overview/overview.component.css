@@ -1,0 +1,39 @@
+
+mat-grid-tile {
+    color: #98A6BD;
+}
+
+mat-grid-tile.symbol {
+    font-weight: bold;
+    font-size: 2em;
+    color: #435169;
+}
+
+mat-grid-tile.value {
+    font-weight: bold;
+    font-size: 4em;
+    color: #55FFFB;
+}
+
+mat-grid-tile.time {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #435169;
+}
+
+mat-grid-tile.percentage {
+    font-size: 2em;
+    color: #98A6BD;
+}
+
+.pull-left {
+    position: absolute;
+    left: 0em;
+    top: 0em;
+}
+
+hr {
+    border-color: #435169;
+    margin-bottom: 2em;
+    margin-top: 3em;
+}

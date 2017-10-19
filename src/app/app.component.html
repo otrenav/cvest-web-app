@@ -1,10 +1,21 @@
 
-<h1>Home</h1>
+<mat-toolbar class="menu mat-elevation-z20">
+    <div class="container">
+        <mat-toolbar-row>
+            <span class="logo">CVEST</span>
+            <span class="space"></span>
+            <nav>
+                <a routerLink="assets"   routerLinkActive="active">Assets</a>
+                <!-- <a routerLink="markets"  routerLinkActive="active">Markets</a> -->
+                <a routerLink="settings" routerLinkActive="active">Settings</a>
+                <a>Sign out</a>
+            </nav>
+        </mat-toolbar-row>
+    </div>
+</mat-toolbar>
 
-<nav>
-    <a routerLink="dashboard" routerLinkActive="active">Dashboard</a>
-    <!-- <a routerLink="analysis"  routerLinkActive="active">Analysis</a> -->
-    <!-- <a routerLink="authentication" routerLinkActive="active">Sign in</a> -->
-</nav>
-
-<router-outlet></router-outlet>
+<div class="container">
+    <mat-card class="mat-elevation-z20">
+        <router-outlet></router-outlet>
+    </mat-card>
+</div>
