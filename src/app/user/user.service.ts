@@ -11,11 +11,47 @@ import { User } from './user';
 @Injectable()
 export class UserService {
 
+    // private user: User = new User(
+    //     'otrenav@gmail.com',
+    //     'Omar',
+    //     '59e682f52f1cbc1d64b71ea7'
+    // );
+
+    // private user: User = new User(
+    //     'rjtr30@gmail.com',
+    //     'Rubén',
+    //     '59e682f52f1cbc1d64b71ea9'
+    // );
+
     private user: User = new User(
-        'otrenav@gmail.com',
-        'Omar',
+        'yuli.godinez@gmail.com',
+        'Yuli',
         '59e682f52f1cbc1d64b71eab'
     );
+
+    // private user: User = new User(
+    //     'ricargom2000@hotmail.com',
+    //     'Gómez',
+    //     '59e682f52f1cbc1d64b71ead'
+    // );
+
+    // private user: User = new User(
+    //     'nestor.sag@gmail.com',
+    //     'Néstor',
+    //     '59e682f52f1cbc1d64b71eaf'
+    // );
+
+    // private user: User = new User(
+    //     'rod.cristina28@gmail.com',
+    //     'Cristy',
+    //     '59e682f52f1cbc1d64b71eb1'
+    // );
+
+    // private user: User = new User(
+    //     'ja.morales.alfaro@gmail.com',
+    //     'Jama',
+    //     '59e682f52f1cbc1d64b71eb3'
+    // );
 
     private url = '';
 
